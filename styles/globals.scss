@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@600;700&family=Montserrat:wght@300;400;500;600;700&family=Oleo+Script:wght@400;700&family=Satisfy&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  &:before{
+    @apply bg-white dark:bg-neutral-900 transition duration-1000;
+    content:'';
+    content: "";
+    width: 100%;
+    height: 100vh;
+    //background: linear-gradient(to right bottom, #6d327c, #485DA6, #00a1ba, #01b18e, #32b37b);
+    // background: #D3D3D3;
+    // background-image: url("https://images.unsplash.com/photo-1508108712903-49b7ef9b1df8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80");
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.text-shadow{
+  text-shadow: 0px 2px 0px rgb(0 0 0 / 30%);
+}
+
+.adjacent-post{
+  & .arrow-btn{
+    transition: width 300ms ease;
+    width: 50px;
+  }
+  &:hover{
+    & .arrow-btn{
+      width: 60px;
+    }
+  }
+}
+
+.react-multi-carousel-list {
+  & .arrow-btn{
+    transition: width 300ms ease;
+    width: 50px;
+    &:hover{
+      width: 60px;
+    }
+  }
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.custom-shadow {
+  filter: drop-shadow(0 10px 13px rgb(0 0 0 / 0.15)) drop-shadow(0 15px 25px rgba(0, 0, 0, 0.15));
+}
+
+.custom-font {
+  // font-family: 'Bangers', cursive;
+  // font-family: 'Caveat', cursive;
+  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Oleo Script', cursive;
+  // font-family: 'Satisfy', cursive;
+}
+
+.custom-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
